@@ -13,7 +13,6 @@ public class extra1 {
         try {
             unirTodo(caracteres);
             imprimirMatriz(caracteres);
-            
         }
         catch (Exception e) {
             System.out.println(e);
@@ -55,10 +54,7 @@ public class extra1 {
             inicio++;
 
         }
-        if (inicio >= fin) {
-            return true;
-        }
-        return false;
+        return inicio >= fin;
     }
     public static void eliminarSecuencia (char [][] caracteres, int fila, int inicio, int fin) {
         for (int i = inicio; i <= fin; i++) {
